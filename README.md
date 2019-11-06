@@ -44,3 +44,19 @@ Negotiate Flags:
         NTLMSSP_NEGOTIATE_TARGET_INFO
         NTLMSSP_NEGOTIATE_VERSION
 ```
+
+## http or https
+```
+GET / HTTP/1.1
+Host: x.x.x.x
+Connection: keep-alive
+Accept-Encoding: gzip, deflate
+Accept: */*
+User-Agent: python-requests/2.20.0
+Authorization: NTLM TlRMTVNTUAABAAAAB4IIAAAAAAAAAAAAAAAAAAAAAAA=
+
+HTTP/1.1 403 Forbidden
+Server: Microsoft-IIS/10.0
+Date: Wed, 06 Nov 2019 07:08:45 GMT
+Content-Length: 0
+```
